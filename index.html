@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matteo Migliari | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="favicon/favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body class="home-page">
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="titolo col-12 text-left">
+                    <h1>CIAO!</h1>
+                </div>
+            </div>
+            <div class="sottotesto">
+                <h2><span class="animate"></span></h2>
+            </div>
+        </div>  
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about-me.html">SU DI ME</a></li>
+                <li><a href="Contact.html">CONTATTI</a></li>
+            </ul>
+        </nav>
+
+       <div class="mobile-header-bar">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+        <div id="menu-overlay" class="menu-overlay" onclick="toggleMenu()"></div>
+
+        <div class="menu">
+            <div class="close-icon" onclick="toggleMenu()">&times;</div>
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about-me.html">Su di me</a>
+                <a href="Contact.html">Contatti</a>
+            </div>
+            <div class="menu-socials">
+                <a href="https://www.behance.net/matteomigliari1" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="https://www.linkedin.com/in/matteo-migliari-702045281/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="arrow-down">
+        <img src="elementi/freccia bianca definitiva.png" alt="Arrow Down" class="arrow-icon">
+    </div>
+
+    <div class="container" id="image-section" style="margin-top: 100vh;">
+        <div class="row mb-4 rounded-images">
+            
+            <div class="col-lg-4 col-6 mb-4">
+                <a href="pagine_progetti/ccc.html" class="image-link">
+                    <img src="immagini per box ridotte/poster lancio orizzontale ccc.png" class="img-fluid" alt="Comune Città Cittadini">
+                </a>
+            </div>
+            
+            <div class="col-lg-4 col-6 mb-4">
+                <a href="pagine_progetti/fanzine.html" class="image-link">
+                    <img src="immagini per box ridotte/copertina zine.png" class="img-fluid" alt="Fanzine">
+                </a>
+            </div>
+            
+            <div class="col-lg-4 col-6 mb-4">
+                <a href="pagine_progetti/il_futuro.html" class="image-link">
+                    <img src="miniature immagini/slide 11 copia.jpg" class="img-fluid" alt="Il Futuro fa 90">
+                </a>
+            </div>
+            
+            <div class="col-lg-4 col-6 mb-4">
+                <a href="pagine_progetti/timpani.html" class="image-link">
+                    <img src="immagini per box ridotte/timpani_box.png" class="img-fluid" alt="Timpani">
+                </a>
+            </div>
+            
+            <div class="col-lg-4 col-6 mb-4">
+                <a href="pagine_progetti/bengo.html" class="image-link">
+                    <img src="immagini per box ridotte/logo-bengo.png" class="img-fluid" alt="Be'n'go">
+                </a>
+            </div>
+            
+            <div class="col-lg-4 col-6 mb-4">
+                <a href="pagine_progetti/life.html" class="image-link">
+                    <img src="immagini per box ridotte/in-ufficio.png" class="img-fluid" alt="Immagine 6">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer-minimal text-center">
+        <div class="container">
+            <p class="mb-2">© 2026 Matteo Migliari</p>
+            <div class="social-icons">
+                <a href="https://www.behance.net/matteomigliari1" target="_blank" class="mx-2"><i class="bi bi-behance"></i></a>
+                <a href="https://www.linkedin.com/in/matteo-migliari-50a104253/" target="_blank" class="mx-2"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Animazione Testo (Typed.js)
+        var typed = new Typed('.animate', {
+            strings: [
+                "SONO MATTEO, GRAFICO E UX/UI DESIGNER.",
+                "QUI TROVERAI IL MIO PORTFOLIO E IL MIO CV!"
+            ],
+            typeSpeed: 40,
+            loop: false
+        });
+
+        // 2. Scroll Freccia
+        document.querySelector('.arrow-down').addEventListener('click', function() {
+            var imageSection = document.getElementById('image-section');
+            if (imageSection) {
+                imageSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        // 3. Logica Menu Mobile
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const overlay = document.querySelector('.menu-overlay');
+            const icon = document.querySelector('.hamburger-icon');
+            
+            menu.classList.toggle('open');
+            if (overlay) overlay.classList.toggle('active');
+            if (icon) icon.classList.toggle('hidden');
+            
+            if (menu.classList.contains('open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
