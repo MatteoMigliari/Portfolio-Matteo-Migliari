@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+
+<title>Matteo Migliari | Graphic & Digital Designer Portfolio</title>
+<meta name="title" content="Matteo Migliari | Graphic & UX/UI Designer Portfolio">
+<meta name="description" content="Hi, i'm Matteo, a graphic and UX/UI designer. Take a look at my portfolio!">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://matteomigliari.github.io/">
+<meta property="og:title" content="Matteo Migliari | Graphic & UX/UI Designer Portfolio">
+<meta property="og:description" content="Hi, i'm Matteo, a graphic and UX/UI designer. Take a look at my portfolio!">
+<meta property="og:image" content="https://matteomigliari.github.io/media/preview.jpg">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://matteomigliari.github.io/">
+<meta property="twitter:title" content="Matteo Migliari | Graphic & UX/UI Designer Portfolio">
+<meta property="twitter:description" content="Hi, i'm Matteo, a graphic and UX/UI designer. Take a look at my portfolio!">
+<meta property="twitter:image" content="https://matteomigliari.github.io/media/preview.jpg">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact me | Matteo Migliari</title>
@@ -54,7 +72,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="titolo col-md-6 mx-auto">
+                <div class="title col-md-6 mx-auto">
                     <h1>Ciao, <span class="animate"></span></h1>
                 </div>
             </div>
@@ -62,16 +80,16 @@
 
         <div class="icon-container">
             <a href="javascript:void(0)" onclick="copyEmail(this)" data-email="matteomiglia@hotmail.com">
-                <img class="icon" src="elementi/email bianca.svg" alt="Email">
+                <img class="icon" src="media/white-email-icon.svg" alt="Email">
                 <div class="icon-description">E-mail</div>
                 <span class="copy-feedback">Copiata!</span>
             </a>
             <a href="https://www.behance.net/matteomigliari1" target="_blank">
-                <img class="icon" src="elementi/behance bianco.svg" alt="Behance">
+                <img class="icon" src="media/behance-white.svg" alt="Behance">
                 <div class="icon-description">Behance</div>
             </a>
             <a href="https://www.linkedin.com/in/matteo-migliari-50a104253/" target="_blank">
-                <img class="icon" src="elementi/linkedin bianco.svg" alt="Linkedin">
+                <img class="icon" src="media/linkedin-white.svg" alt="Linkedin">
                 <div class="icon-description">Linkedin</div>
             </a>
         </div>
@@ -153,7 +171,7 @@
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
                     btn.innerText = 'Messaggio Inviato!';
-                    alert('Grazie Matteo, ti risponderò al più presto!');
+                    alert('Grazie, ti risponderò al più presto!');
                     this.reset();
                 }, (err) => {
                     btn.innerText = 'Errore...';

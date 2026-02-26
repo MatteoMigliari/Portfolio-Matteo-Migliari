@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* =========================================
-   1. SETUP & VARIABILI
+   1. SETUP
    ========================================= */
 html {
   scrollbar-gutter: stable;
@@ -22,7 +22,7 @@ body {
    2. HOME PAGE
    ========================================= */
 body.home-page {
-  background-image: url("Sfondo-Home/Back.svg") !important;
+  background-image: url("home-background/Back.svg") !important;
   background-color: #177e8a;
   background-size: cover !important;
   background-position: center top;
@@ -87,7 +87,7 @@ body.about-page h1 {
 }
 
 /* =========================================
-   4. HEADER & NAVIGAZIONE
+   4. HEADER & NAV
    ========================================= */
 header {
   color: rgb(228, 208, 171);
@@ -103,7 +103,7 @@ body.home-page header {
 body.about-page header {
   margin-top: 50px;
 }
-header .titolo h1 {
+header .title h1 {
   color: #ffffff;
   font-family: "capitana", sans-serif;
   font-size: 10vw;
@@ -111,19 +111,19 @@ header .titolo h1 {
   margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
-  header .titolo h1 {
+  header .title h1 {
     text-align: left;
     margin-left: -30px;
     font-size: 15vw;
   }
 }
-header .sottotesto h2 {
+header .subtitle h2 {
   color: #ffffff;
   font-family: "capitana", sans-serif;
   font-size: 1.7vw;
 }
 @media (max-width: 768px) {
-  header .sottotesto h2 {
+  header .subtitle h2 {
     text-align: left;
     margin-left: -10px;
     font-size: 5vw;
@@ -196,7 +196,7 @@ nav ul li a:hover::after {
 }
 
 /* =========================================
-   5. MENU MOBILE
+   5. MOBILE MENU
    ========================================= */
 .mobile-header-bar {
   display: none;
@@ -213,7 +213,6 @@ nav ul li a:hover::after {
     width: 100%;
     height: 70px;
     z-index: 1000;
-    /* Effetto "Invisibile ma protettivo" */
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -266,7 +265,7 @@ nav ul li a:hover::after {
 }
 
 /* =========================================
-   6. COMPONENTI (Arrow, CV, Footer)
+   6. COMPONENTS (Arrow, CV, Footer)
    ========================================= */
 .arrow-down {
   text-align: center;
@@ -437,7 +436,7 @@ body.about-page .arrow-down {
    7. CONTACT PAGE
    ========================================= */
 body.contact-page {
-  background-image: url("elementi/back contatti.svg") !important;
+  background-image: url("media/contact-page-back.svg") !important;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -446,12 +445,12 @@ body.contact-page {
 body.contact-page header {
   padding-top: 15vh !important;
 }
-body.contact-page header .titolo h1 {
+body.contact-page header .title h1 {
   font-size: 3vw !important;
   margin-bottom: 5rem;
 }
 @media (max-width: 768px) {
-  body.contact-page header .titolo h1 {
+  body.contact-page header .title h1 {
     font-size: 8vw !important;
     text-align: center;
     margin-left: 0;
@@ -588,13 +587,13 @@ body.contact-page .icon-container a .copy-feedback {
 }
 
 /* =========================================
-   8. PAGINE PROGETTO
+   8. PROJECT PAGES
    ========================================= */
 body.project-page {
   background-color: #177e8a;
   color: #ffffff;
 }
-body.project-page .progetto-wrapper {
+body.project-page .project-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -767,7 +766,7 @@ body.page-life {
 }
 
 /* =========================================
-   9. MASTER MOBILE (Sotto i 768px)
+   9. MASTER MOBILE (UNDER 768px)
    ========================================= */
 @media (max-width: 768px) {
   header {
@@ -778,13 +777,13 @@ body.page-life {
     text-align: left !important;
     width: 100%;
   }
-  header .titolo h1 {
+  header .title h1 {
     text-align: left !important;
     margin-left: 0 !important;
     font-size: 15vw !important;
     line-height: 1.1;
   }
-  header .sottotesto {
+  header .subtitle {
     text-align: left !important;
     padding-left: 15px !important;
     margin-top: 5px !important;
@@ -792,12 +791,12 @@ body.page-life {
     display: flex;
     align-items: flex-start;
   }
-  header .sottotesto h2 {
+  header .subtitle h2 {
     font-size: 1.1rem !important;
     line-height: 1.4;
     max-width: 90%;
   }
-  body.project-page .progetto-wrapper {
+  body.project-page .project-wrapper {
     padding: 0 10px !important;
   }
   body.project-page .project-header {
@@ -935,7 +934,7 @@ body.page-life {
     margin-right: 20px !important;
     border-width: 2px !important;
   }
-  body.about-page header .titolo h1 {
+  body.about-page header .title h1 {
     font-size: 1.8rem !important;
     line-height: 1.1 !important;
     margin: 0 !important;
@@ -962,7 +961,7 @@ body.page-life {
        object-fit: cover;
     margin: 0 !important;
   }
-  body.about-page .titolo h1 {
+  body.about-page .title h1 {
     font-size: 1.4rem !important;
     line-height: 1.1 !important;
     display: inline-block;

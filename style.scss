@@ -1,5 +1,5 @@
 /* =========================================
-   1. SETUP & VARIABILI
+   1. SETUP
    ========================================= */
 
 html {
@@ -35,7 +35,7 @@ body {
    2. HOME PAGE
    ========================================= */
 body.home-page {
-  background-image: url('Sfondo-Home/Back.svg') !important;
+  background-image: url('home-background/Back.svg') !important;
   background-color: #177e8a;
   background-size: cover !important;
   background-position: center top;
@@ -104,7 +104,7 @@ body.about-page {
 }
 
 /* =========================================
-   4. HEADER & NAVIGAZIONE
+   4. HEADER & NAV
    ========================================= */
 header {
   color: $color-primary;
@@ -121,7 +121,7 @@ header {
       margin-top: 50px;
   }
 
-  .titolo h1 {
+  .title h1 {
     color: $white;
     font-family: $font-main;
     font-size: 10vw; 
@@ -135,7 +135,7 @@ header {
     }
   }
 
-  .sottotesto h2 {
+  .subtitle h2 {
     color: $white;
     font-family: $font-main;
     font-size: 1.7vw;
@@ -217,7 +217,7 @@ nav {
 }
 
 /* =========================================
-   5. MENU MOBILE
+   5. MOBILE MENU
    ========================================= */
 
    .mobile-header-bar {
@@ -290,7 +290,7 @@ nav {
 }
 
 /* =========================================
-   6. COMPONENTI (Arrow, CV, Footer)
+   6. COMPONENTS (Arrow, CV, Footer)
    ========================================= */
 .arrow-down {
   text-align: center;
@@ -468,7 +468,7 @@ nav {
    7. CONTACT PAGE
    ========================================= */
 body.contact-page {
-  background-image: url('elementi/back contatti.svg') !important;
+  background-image: url('media/contact-page-back.svg') !important;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -478,7 +478,7 @@ body.contact-page {
     padding-top: 15vh !important; 
   }
 
-  header .titolo h1 {
+  header .title h1 {
     font-size: 3vw !important;
     margin-bottom: 5rem;
     
@@ -615,13 +615,13 @@ body.contact-page {
 }
 
 /* =========================================
-   8. PAGINE PROGETTO
+   8. PROJECT PAGES
    ========================================= */
 body.project-page {
     background-color: $bg-about;
     color: $white;
 
-    .progetto-wrapper {
+    .project-wrapper {
         max-width: 1200px;
         margin: 0 auto;
         width: 100%;
@@ -769,7 +769,7 @@ body.page-life { background-color: #000000 !important; background-image: none !i
 }
 
 /* =========================================
-   9. MASTER MOBILE (Sotto i 768px)
+   9. MASTER MOBILE (UNDER 768px)
    ========================================= */
 @media (max-width: 768px) {
     header {
@@ -779,13 +779,13 @@ body.page-life { background-color: #000000 !important; background-image: none !i
         align-items: flex-start !important;
         text-align: left !important;
         width: 100%;
-        .titolo h1 {
+        .title h1 {
             text-align: left !important;
             margin-left: 0 !important;
             font-size: 15vw !important;
             line-height: 1.1;
         }
-        .sottotesto {
+        .subtitle {
             text-align: left !important;
             padding-left: 15px !important;
             margin-top: 5px !important;
@@ -801,7 +801,7 @@ body.page-life { background-color: #000000 !important; background-image: none !i
     }
 
     body.project-page {
-        .progetto-wrapper { padding: 0 10px !important; }
+        .project-wrapper { padding: 0 10px !important; }
         .project-header {
             padding-top: 60px !important;
             h1 {
@@ -899,7 +899,7 @@ body.page-life { background-color: #000000 !important; background-image: none !i
             margin-right: 20px !important;
             border-width: 2px !important;
         }
-        .titolo h1 {
+        .title h1 {
             font-size: 1.8rem !important;
             line-height: 1.1 !important;
             margin: 0 !important;
@@ -928,7 +928,7 @@ body.page-life { background-color: #000000 !important; background-image: none !i
             object-fit: cover;
             margin: 0 !important;
         }
-        .titolo h1 {
+        .title h1 {
             font-size: 1.4rem !important;
             line-height: 1.1 !important;
             display: inline-block;
